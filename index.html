@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content=
+        "width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    <title>
+       Survey Form 
+    </title>
+ 
+    <style>
+        /* Styling the Body element i.e. Color,
+        Font, Alignment */
+        body {
+            background-color: #31dde1;
+            background-blend-mode:hue;
+    
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            text-align: left;
+        }
+ 
+        /* Styling the Form (Color, Padding, Shadow) */
+        form {
+            background-color: #fff;
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 30px 20px;
+            box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+        }
+         /* Styling form-control Class */
+         .form-control {
+            text-align: left;
+            margin-bottom: 25px;
+        }
+ 
+        /* Styling form-control Label */
+        .form-control label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        /* Styling form-control input,
+        select, textarea */
+        .form-control input,
+        .form-control select,
+        .form-control textarea {
+            border: 1px solid #777;
+            border-radius: 2px;
+            font-family: inherit;
+            padding: 10px;
+            display: block;
+            width: 95%;
+        }
+  /* Styling form-control Radio
+        button and Checkbox */
+        .form-control input[type="radio"],
+        .form-control input[type="checkbox"] {
+            display: inline-block;
+            width: auto;
+        }
+  /* Styling Button */
+  button {
+            background-color: #05c46b;
+            border: 1px solid #777;
+            border-radius: 2px;
+            font-family: inherit;
+            font-size: 21px;
+            display: block;
+            width: 100%;
+            margin-top: 50px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="heading">
+        <h1 id="head">SURVEY FORM</h1>
+    </div>
+    <form>
+        
+        <div id="content1">
+            <label>Name</label><br><br>
+            <input type="name" name="name" placeholder="Enter your name" class="box"> <br><br>
+            <label>Email</label><br><br>
+            <input type="email" name="email" placeholder="Enter your email" class="box"> <br><br>
+            <label>Gender</label><br><br> 
+            <div id="option1">
+                <select>
+                    <option name="Select">Select</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Prefer Not To Say">Prefer Not To Say</option>
+                </select>
+            </div>
+        
+        <label>1. Will you recommend this college to others?</label> <br><br>
+        <div class="box">
+            <div class="rating">
+                
+                <input type="radio" name="rating" id="rate5"><label for="rate5">5</label>
+                <input type="radio" name="rating" id="rate4"><label for="rate4">4</label>
+                <input type="radio" name="rating" id="rate3"><label for="rate3">3</label>
+                <input type="radio" name="rating" id="rate2"><label for="rate2">2</label>
+                <input type="radio" name="rating" id="rate1"><label for="rate1">1</label>
+
+            </div>
+        </div>
+            
+        <label>2. Are you satisfied with the teaching staff and their teaching methods?</label> <br><br>
+        
+        <div id="option1">
+            <select>
+                <option name="Select">Select</option>
+                <option value="Extremely satisfied">Extremely satisfied</option>
+                <option value="Very satisfied">Very satisfied</option>
+                <option value="Satisfied">Satisfied</option>
+                <option value="Neutral">Neutral</option>
+                <option value="Dissatisfied">Dissatisfied</option>
+                <option value="Very dissatisfied">Very dissatisfied</option>
+                <option value="Extremely dissatisfied">Extremely dissatisfied</option>
+            </select>
+        </div>
+        <br>
+            <label>3. How satisfied are you with the facilities provided by the college?</label> <br><br>
+        <div id="option1">
+            <select>
+                <option name="Select">Select</option>
+                <option value="Extremely satisfied">Extremely satisfied</option>
+                <option value="Very satisfied">Very satisfied</option>
+                <option value="Satisfied">Satisfied</option>
+                <option value="Neutral">Neutral</option>
+                <option value="Dissatisfied">Dissatisfied</option>
+                <option value="Very dissatisfied">Very dissatisfied</option>
+                <option value="Extremely dissatisfied">Extremely dissatisfied</option>
+            </select>
+        </div>
+        <br>
+        <label id="head1">4. Was it easy to obtain the necessary resources from the college library?</label> <br> <br>
+        <input type="radio" name="radio" class="larger">&nbsp&nbsp&nbspYes<br> <br>
+        <input type="radio" name="radio" class="larger">&nbsp&nbsp&nbspNo<br> <br> 
+
+        <label id="head1">5. Is it easy to obtain the necessary resources from the college library?</label> <br> <br>
+        <input type="radio" name="radio" class="larger">&nbsp&nbsp&nbspYes<br> <br>
+        <input type="radio" name="radio" class="larger">&nbsp&nbsp&nbspNo<br> <br> 
+
+        <label>6. Do you feel it is easier to register for different courses within the college?</label> <br><br>
+        <div id="option1">
+            <select>
+                <option name="Select">Select</option>
+                <option value="Extremely satisfied">Extremely satisfied</option>
+                <option value="Very satisfied">Very satisfied</option>
+                <option value="Satisfied">Satisfied</option>
+                <option value="Neutral">Neutral</option>
+                <option value="Dissatisfied">Dissatisfied</option>
+                <option value="Very dissatisfied">Very dissatisfied</option>
+                <option value="Extremely dissatisfied">Extremely dissatisfied</option>
+            </select>
+        </div>
+        <br>
+
+        <label>7. How satisfied are you with the cleanliness and variety of food items available in the cafeteria?</label> <br><br>
+        <div id="option1">
+            <select>
+                <option name="Select">Select</option>
+                <option value="Extremely satisfied">Extremely satisfied</option>
+                <option value="Very satisfied">Very satisfied</option>
+                <option value="Satisfied">Satisfied</option>
+                <option value="Neutral">Neutral</option>
+                <option value="Dissatisfied">Dissatisfied</option>
+                <option value="Very dissatisfied">Very dissatisfied</option>
+                <option value="Extremely dissatisfied">Extremely dissatisfied</option>
+            </select>
+        </div>
+        <br>
+
+        <label>8. How supportive were the faculty members?</label> <br><br>
+        <div id="option1">
+            <select>
+                <option name="Select">Select</option>
+                <option value="Extremely satisfied">Extremely satisfied</option>
+                <option value="Very satisfied">Very satisfied</option>
+                <option value="Satisfied">Satisfied</option>
+                <option value="Neutral">Neutral</option>
+                <option value="Dissatisfied">Dissatisfied</option>
+                <option value="Very dissatisfied">Very dissatisfied</option>
+                <option value="Extremely dissatisfied">Extremely dissatisfied</option>
+            </select>
+        </div>
+        <br>
+
+        <label>9. What do you think of the hostel?</label> <br><br>
+        <div id="option1">
+            <select>
+                <option name="Select">Select</option>
+                <option value="Extremely crowded">Extremely crowded</option>
+                <option value="Very crowded">Very crowded</option>
+                <option value="Somewhat crowded">Somewhat crowded</option>
+                <option value="Not so crowded">Not so crowded</option>
+                <option value="Not at all crowded">Not at all crowded</option>
+            </select>
+        </div>
+        <br>
+
+        <label id="head1">10. Are you satisfied with the teaching staff and their teaching practices?</label> <br> <br>
+        <input type="radio" name="radio" class="larger">&nbsp&nbsp&nbspYes<br> <br>
+        <input type="radio" name="radio" class="larger">&nbsp&nbsp&nbspNo<br> <br> 
+
+        <label>11. Do you think faculty and support staff at the college were helpful?</label> <br><br>
+        <div id="option1">
+            <select>
+                <option name="Select">Select</option>
+                <option value="Very helpful">Very helpful</option>
+                <option value="Helpful">Helpful</option>
+                <option value="Neither helpful nor unhelpful">Neither helpful nor unhelpful</option>
+                <option value="Unhelpful">Unhelpful</option>
+                <option value="Very unhelpful">Very unhelpful</option>
+            </select>
+        </div>
+        <br>   
+        
+        <label>12. How likely are you to continue attending this college next year?</label> <br><br>
+        <div id="option1">
+            <select>
+                <option name="Select">Select</option>
+                <option value="Extremely likely">Extremely likely</option>
+                <option value="Very likely">Very likely</option>
+                <option value="Somewhat likely">Somewhat likely</option>
+                <option value="Not so likely">Not so likely</option>
+                <option value="Not at all likely">Not at all likely</option>
+            </select>
+        </div>
+        <br>   
+
+        <label>13. How satisfied are you with the accommodation?</label> <br><br>
+        <div id="option1">
+            <select>
+                <option name="Select">Select</option>
+                <option value="Extremely satisfied">Extremely satisfied</option>
+                <option value="Very satisfied">Very satisfied</option>
+                <option value="Satisfied">Satisfied</option>
+                <option value="Neutral">Neutral</option>
+                <option value="Dissatisfied">Dissatisfied</option>
+                <option value="Very dissatisfied">Very dissatisfied</option>
+                <option value="Extremely dissatisfied">Extremely dissatisfied</option>
+            </select>
+        </div>
+        <br>
+
+        <label id="head1">14. Given a chance, are you willing to pursue another course at the college?</label> <br> <br>
+        <input type="radio" name="radio" class="larger">&nbsp&nbsp&nbspDefinitely, Yes &emsp; &emsp; &emsp; &nbsp; <br> <br>
+        <input type="radio" name="radio" class="larger">&nbsp&nbsp&nbspProbably, Yes&emsp; &emsp; &emsp;   <br> <br>
+        <input type="radio" name="radio" class="larger">&nbsp&nbsp&nbspCan't say&emsp; &emsp; <br> <br>
+        <input type="radio" name="radio" class="larger">&nbsp&nbsp&nbspDefinitely, No &emsp; &emsp; &ensp; &ensp; &nbsp;  <br> <br>
+        <input type="radio" name="radio" class="larger">&nbsp&nbsp&nbspProbably No<br> <br>
+
+        <label id="head1">15. Do you think your siblings or friends will be benefited by studying at this college?</label> <br> <br>
+        <input type="radio" name="radio" class="larger">&nbsp&nbsp&nbspDefinitely, Yes &emsp; &emsp; &emsp; &nbsp; <br> <br>
+        <input type="radio" name="radio" class="larger">&nbsp&nbsp&nbspProbably, Yes&emsp; &emsp; &emsp;   <br> <br>
+        <input type="radio" name="radio" class="larger">&nbsp&nbsp&nbspCan't say<br> <br>
+        <input type="radio" name="radio" class="larger">&nbsp&nbsp&nbspDefinitely, No &emsp; &emsp; &ensp; &ensp; &nbsp; <br> <br>
+        <input type="radio" name="radio" class="larger">&nbsp&nbsp&nbspProbably No<br> <br>
+
+        <label>16. How many hours a week do you work your part-time job?</label> <br><br>
+        <div id="option1">
+            <select>
+                <option name="Select">Select</option>
+                <option value="I don’t have a job">I don’t have a job</option>
+                <option value="1-10 hours a week">1-10 hours a week</option>
+                <option value="11-15 hours a week">11-15 hours a week</option>
+                <option value="16-20 hours a week">16-20 hours a week</option>
+                <option value="More than 20 hours a week">More than 20 hours a week</option>
+            </select>
+        </div>
+        <br> 
+        
+        <label>17. How about your overall experience with this college?</label> <br><br>
+        <div id="option1">
+            <select>
+                <option name="Select">Select</option>
+                <option value="I don’t have a job">I don’t have a job</option>
+                <option value="No, I manage them both well">No, I manage them both well</option>
+                <option value="Yes, but rarely">Yes, but rarely</option>
+                <option value="Yes, often">Yes, often</option>
+                <option value="Yes, always">Yes, always</option>
+            </select>
+        </div>
+        <br> 
+
+        <label id="head1">18. What do you think about extracurricular activities?</label> <br> <br>
+        <input type="radio" name="radio" class="larger">&nbsp&nbsp&nbspThey are too few<br> <br>
+        <input type="radio" name="radio" class="larger">&nbsp&nbsp&nbspThey are just right<br> <br>
+        <input type="radio" name="radio" class="larger">&nbsp&nbsp&nbspI was overwhelmed with the number<br> <br>  
+
+        <label id="head1">19. Do you think that the college takes enough measures to curb racial and ethnic bias?</label> <br> <br>
+        <input type="radio" name="radio" class="larger">&nbsp&nbsp&nbspDefinitely, Yes &emsp; &emsp; &emsp; &nbsp;<br> <br>
+        <input type="radio" name="radio" class="larger">&nbsp&nbsp&nbspProbably, Yes&emsp; &emsp; &emsp;  <br> <br>
+        <input type="radio" name="radio" class="larger">&nbsp&nbsp&nbspCan't say<br> <br>
+        <input type="radio" name="radio" class="larger">&nbsp&nbsp&nbspDefinitely, No &emsp; &emsp; &ensp; &ensp; &nbsp; <br> <br>
+        <input type="radio" name="radio" class="larger">&nbsp&nbsp&nbspProbably No<br> <br>
+
+     
+        
+        <label id="head2">Please provide us with additional feedback on areas that need improvement</label> <br> <br>
+        <div id="content2">
+        <textarea placeholder="Type here..."></textarea> <br>
+        <button><h3>Submit</h3></button>
+    </div>
+    </div>
+    </form>
+</body>
+</html>
